@@ -1,0 +1,37 @@
+@import "../vars";
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1.1rem 1.8rem;
+  min-width: 170px;
+  border: 1px solid $gray;
+  border-radius: 30px;
+  background: none;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+
+  line-height: 1.1;
+  font-size: 1.06rem;
+  font-family: inherit;
+  color: $black;
+
+  transition: background-color linear 0.2s, color linear 0.2s,
+    box-shadow linear 0.2s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+    box-shadow: 2px 2px 10px rgba($color: $black, $alpha: 0.24%);
+  }
+  + .btn {
+    margin-left: 1rem;
+  }
+}
