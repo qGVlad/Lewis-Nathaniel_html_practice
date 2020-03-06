@@ -1,0 +1,27 @@
+@import "../vars";
+
+.user {
+  display: flex;
+
+  &__name {
+    font-size: 1.06rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $black;
+  }
+
+  &__avatar {
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__content {
+    padding-left: 9px;
+  }
+
+  &__prof {
+    font-size: 0.8rem;
+    color: rgba($color: #2b2a2c, $alpha: 0.7);
+  }
+}

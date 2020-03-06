@@ -1,0 +1,33 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+// your scss code
+html {
+  font-size: 15px;
+  font-family: $default-font;
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+@import "blocks/container";
+@import "blocks/header.scss";
+@import "blocks/user.scss";
+@import "blocks/nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/social.scss";
+
+@import "media"; // Always at the end
