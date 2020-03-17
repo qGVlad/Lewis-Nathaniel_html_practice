@@ -28,7 +28,7 @@ function browserSyncReload(done) {
 
 // Sass|Scss Styles
 function styles() {
-	return gulp.src('app/scss/**/*.scss')
+	return gulp.src('app/scss/main.scss')
 		.pipe(sass({
 			outputStyle: 'expanded'
 		}).on("error", notify.onError()))
