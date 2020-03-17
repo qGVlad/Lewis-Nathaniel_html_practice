@@ -1,0 +1,62 @@
+@import "../vars";
+
+.about {
+  margin: 8.4rem 0;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__photo {
+    padding-right: 3.2rem;
+    position: relative;
+
+    &__img {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:before {
+      content: "";
+      width: 413px;
+      height: 413px;
+      background-color: $white;
+
+      position: absolute;
+      left: 1rem;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+
+  &__content {
+    padding-left: 3.2rem;
+    margin-top: 2rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $black;
+  }
+
+  &__big-title {
+    margin-bottom: 1.4rem;
+    position: relative;
+    left: -10px;
+
+    font-size: 6.1rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: rgba($color: $black, $alpha: 0.15%);
+  }
+
+  &__text {
+    margin-bottom: 2.8rem;
+
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: $gray;
+    line-height: 2;
+  }
+}
