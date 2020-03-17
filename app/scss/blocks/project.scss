@@ -1,0 +1,40 @@
+@import "../vars";
+
+.project {
+  box-shadow: 0 0 4px rgba($color: $gray, $alpha: 0.25%);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow linear 0.2s;
+
+  &:hover {
+    box-shadow: 0 0 25px rgba($color: $gray, $alpha: 0.25%);
+  }
+
+  &__image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  &__content {
+    padding: 1rem 0.8rem;
+  }
+
+  &__category {
+    font-size: 0.8rem;
+    color: $black;
+    text-transform: uppercase;
+
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    font-size: 1.06rem;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}

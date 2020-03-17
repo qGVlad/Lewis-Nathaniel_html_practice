@@ -1,0 +1,21 @@
+@import "../vars";
+
+.work {
+  padding: 2.08rem 0;
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+
+    &-link {
+      margin: 0 1.2rem;
+      font-size: 0.8rem;
+      color: rgba($color: $black, $alpha: 0.7);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

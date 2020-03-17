@@ -34,4 +34,11 @@
   + .btn {
     margin-left: 1rem;
   }
+
+  &--sm {
+    padding: 0.66666rem 1.33333rem;
+    font-size: 0.94rem;
+    font-weight: 700;
+    border-width: 2px;
+  }
 }

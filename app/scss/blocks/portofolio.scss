@@ -1,0 +1,9 @@
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__col {
+    flex-basis: 33.33333%;
+    padding: 1rem;
+  }
+}
