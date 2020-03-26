@@ -1,0 +1,35 @@
+@import "../vars";
+
+.news {
+  margin-top: 12rem;
+
+  &__header {
+    margin-bottom: 3.3rem;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $black;
+  }
+
+  &__text {
+    color: $gray-light;
+    font-size: 1.2rem;
+  }
+
+  &__footer {
+    text-align: right;
+  }
+
+  &__link {
+    color: $gray;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

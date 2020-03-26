@@ -20,7 +20,7 @@
   color: $black;
 
   transition: background-color linear 0.2s, color linear 0.2s,
-    box-shadow linear 0.2s;
+    box-shadow linear 0.2s, border-color linear 0.2s;
 
   &:focus {
     outline: none;
@@ -28,6 +28,7 @@
 
   &:hover {
     background-color: $black;
+    border-color: $black;
     color: $white;
     box-shadow: 2px 2px 10px rgba($color: $black, $alpha: 0.24%);
   }

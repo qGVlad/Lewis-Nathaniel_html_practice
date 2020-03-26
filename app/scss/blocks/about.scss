@@ -38,6 +38,7 @@
     font-size: 3rem;
     font-weight: 700;
     color: $black;
+    text-transform: uppercase;
   }
 
   &__big-title {
@@ -46,6 +47,7 @@
     left: -10px;
 
     font-size: 6.1rem;
+    text-transform: uppercase;
     line-height: 1.1;
     font-weight: 700;
     color: rgba($color: $black, $alpha: 0.15%);
