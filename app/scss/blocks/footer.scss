@@ -1,0 +1,65 @@
+@import "../vars";
+
+.footer {
+  padding: 1.35rem 0;
+  background-color: $black;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__credits {
+    color: $gray-light;
+    display: flex;
+  }
+
+  &__copyright {
+    padding-right: 0.8rem;
+    margin-right: 1rem;
+    font-size: 0.94rem;
+    color: #8d8d8e;
+
+    border-right: 1px solid rgba($gray, 0.35);
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    img {
+      width: 18px;
+      margin-right: 1.2rem;
+      text-decoration: none;
+    }
+  }
+
+  &__nav {
+    display: flex;
+  align-items: center;
+    &-link {
+      margin-left: 1.5rem;
+      color: $gray;
+      font-size: 0.94rem;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+
+      transition: all 0.2s linear;
+
+      &:hover {
+        border-color: $gray;
+      }
+
+      &--btn {
+        border: 1px solid $gray-light;
+        border-radius: 20px;
+        padding: 0.5rem 1.7rem ;
+        line-height: 1.1;
+        &:hover {
+          background-color: #AAA9AA;
+          border-color: #AAA9AA;
+          color: $black;
+        }
+      }
+    }
+  }
+}
