@@ -1,0 +1,99 @@
+@import "../vars";
+
+.modal-work {
+  display: flex;
+
+  &__preview {
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  &__content {
+    width: 35%;
+    padding: 3.4rem 6.6rem 11.2rem 1.73rem;
+    position: relative;
+  }
+
+  &__header {
+    margin-bottom: 2.2rem;
+  }
+
+  &__title {
+    margin-bottom: 0.2rem;
+    font-size: 2.12rem;
+    color: $black;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    font-size: 1.2rem;
+    color: $gray;
+    text-transform: uppercase;
+
+    &-divider {
+      margin: 0 1rem;
+    }
+  }
+
+  &__client {
+    margin-bottom: 2.2rem;
+
+    &-title {
+      margin-bottom: 0.2rem;
+      font-size: 1.06rem;
+      font-weight: 700;
+      color: $black;
+    }
+
+    &-company {
+      font-size: 0.94rem;
+      font-style: italic;
+      color: $gray;
+    }
+  }
+
+  &__text {
+    font-size: 0.8rem;
+    color: $gray;
+    line-height: 2;
+    font-weight: 300;
+  }
+
+  &__footer {
+    position: absolute;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.8rem 1rem;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__btn {
+    padding: 0;
+    background: 0;
+    border: 0;
+
+    font-family: inherit;
+    font-size: 0.94rem;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  &__arrow {
+    height: 0.7rem;
+  }
+}

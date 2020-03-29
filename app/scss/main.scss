@@ -2,8 +2,7 @@
 @import "fonts";
 @import "libs";
 
-// your scss code
-html {
+body {
   font-size: 15px;
   font-family: $default-font;
 }
@@ -38,6 +37,8 @@ h6 {
 @import "blocks/news.scss";
 @import "blocks/articles.scss";
 @import "blocks/footer.scss";
+@import "blocks/modal.scss";
+@import "blocks/modal__work.scss";
 
 @import "helpers.scss";
 @import "media"; // Always at the end
