@@ -21,6 +21,10 @@
     max-width: 1200px;
     margin: auto;
     background-color: white;
+
+    &--sm {
+      max-width: 900px;
+    }
   }
 
   &__close {
@@ -55,5 +59,12 @@
     text-transform: uppercase;
     color: $black;
     font-weight: 700;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: 1.06rem;
+    color: $black;
+    font-weight: 400;
   }
 }

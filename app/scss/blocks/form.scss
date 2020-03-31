@@ -1,0 +1,29 @@
+@import "../vars";
+
+.form {
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 1.3rem 1.8rem;
+
+    font-family: inherit;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    font-weight: 300;
+    color: $black;
+
+    border: 1px solid rgba(#707070, 30%);
+    border-radius: 1.8rem;
+
+    margin-bottom: 1.8rem;
+
+    &::placeholder {
+      color: $black;
+    }
+
+    &--request {
+      height: 200px;
+      resize: none;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../vars";
+
+.contact {
+  display: flex;
+
+  &__left {
+    width: 47%;
+    padding: 2rem;
+  }
+
+  &__right {
+    width: 53%;
+    background: $black url("https://via.placeholder.com/480x700") center
+      no-repeat;
+  }
+
+  &__info {
+    margin: 2rem 0 3rem;
+    padding: 0;
+    list-style: none;
+
+    font-size: .94rem;
+    color: $black;
+    font-weight: 300;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-icon {
+      width: 1.33rem;
+      height: 1.33rem;
+      margin-right: 1rem;
+    }
+  }
+}

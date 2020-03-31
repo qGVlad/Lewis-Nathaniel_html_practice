@@ -520,7 +520,7 @@
       </div>
     </div>
 
-    <div class="modal">
+    <div class="modal" style="display: none">
       <div class="modal__dialog">
         <button class="modal__close" type="button">
           <img src="img/close.svg" alt="close" />
@@ -685,6 +685,58 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" style="display: none">
+      <div class="modal__dialog modal__dialog--sm">
+        <button class="modal__close" type="button">
+          <img src="img/close.svg" alt="close" />
+        </button>
+        <div class="contact">
+          <div class="contact__left">
+            <h3 class="modal__title mb-0">
+              LET'S TALK!
+            </h3>
+            <div class="modal__subtitle">CALL ME OR SEND ME A REQUEST</div>
+            <ul class="contact__info">
+              <li class="contact__info-item">
+                <img
+                  class="contact__info-icon"
+                  src="img/phone.svg"
+                  alt="phone"
+                />
+                (200) 100 3000
+              </li>
+              <li class="contact__info-item">
+                <img class="contact__info-icon" src="img/mail.svg" alt="mail" />
+                designer@ui43.com
+              </li>
+            </ul>
+
+            <form class="form" action="/" method="post">
+              <label>
+                <input
+                  class="form__input form__input--email"
+                  type="text"
+                  placeholder="Adress e-mail"
+                  name="input-email"
+                />
+              </label>
+              <label>
+                <textarea
+                  class="form__input form__input--request"
+                  placeholder="Type your request..."
+                  name="input-request"
+                ></textarea>
+              </label>
+              <div class="text-right">
+                <button type="submit" class="btn">Send</button>
+              </div>
+            </form>
+          </div>
+          <div class="contact__right"></div>
         </div>
       </div>
     </div>
