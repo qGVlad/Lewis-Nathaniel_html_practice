@@ -1,3 +1,5 @@
+@import "../vars";
+
 .modal {
   display: flex;
   width: 100%;
@@ -40,5 +42,19 @@
     &:hover {
       transform: rotate(-90deg);
     }
+  }
+
+  &__content {
+    padding: 5rem 1rem;
+  }
+
+  &__title {
+    margin-bottom: 3.6rem;
+
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $black;
+    font-weight: 700;
+    text-align: center;
   }
 }

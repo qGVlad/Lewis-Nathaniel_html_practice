@@ -1,0 +1,36 @@
+@import "../vars";
+
+.progress-bar {
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  &__skill {
+    width: 40%;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 0.94rem;
+  }
+
+  &__progress {
+    width: 50%;
+    padding-left: 1.2rem;
+
+    &-outer {
+      width: 139px;
+      height: 6px;
+
+      background-color: #eeeeef;
+    }
+
+    &-inner {
+      height: 100%;
+      background-color: $gray;
+      transition: width linear 0.2s;
+    }
+  }
+}
