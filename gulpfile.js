@@ -2,7 +2,7 @@ const gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	browser = require('browser-sync'),
 	concat = require('gulp-concat'),
-	uglify = require('gulp-uglify'),
+	uglify = require('gulp-uglify-es').default,
 	cleancss = require('gulp-clean-css'),
 	rename = require('gulp-rename'),
 	autoprefixer = require('gulp-autoprefixer'),
@@ -54,11 +54,8 @@ function scripts() {
 			'app/js/common.js'
 		])
 		.pipe(concat('scripts.min.js'))
-		.pipe(uglify()) // Mifify js (opt.)
-		.pipe(gulp.dest('app/js'))
-		.pipe(browserSync.reload({
-			stream: true
-		}));
+		.pipe(uglify())
+		.pipe(gulp.dest('app/js'));
 }
 
 function watch() {

@@ -1,5 +1,5 @@
 {
-  "name": "Practice",
+  "name": "practice",
   "version": "1.0.0",
   "description": "Lewis-Nathaniel_html_practice",
   "main": "gulpfile.js",
@@ -19,6 +19,6 @@
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify-es": "^2.0.0"
   }
 }
