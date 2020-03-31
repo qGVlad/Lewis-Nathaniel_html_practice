@@ -2,10 +2,18 @@
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .helpers__transform-Y {
   transition: transform 0.2s linear;
 
   &:hover {
     transform: translateY(-5px);
   }
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
