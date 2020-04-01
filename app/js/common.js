@@ -45,6 +45,36 @@ $(function() {
     addScrollBody();
   });
 
+  // ===== Slider ===== https://kenwheeler.github.io/slick/
+  $('[data-slider="slick"]').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    fade: true
+  });
+
+  $(".slickPrev").on("click", function(event) {
+    event.preventDefault();
+
+    let currentSlider = $(this)
+      .parents(".modal")
+      .find('[data-slider="slick"]');
+
+    currentSlider.slick("slickPrev");
+  });
+
+  $(".slickNext").on("click", function(event) {
+    event.preventDefault();
+
+    let currentSlider = $(this)
+      .parents(".modal")
+      .find('[data-slider="slick"]');
+
+    currentSlider.slick("slickNext");
+  });
+
   // ===== Helpers =====
   function removeScrollBody() {
     $("body").addClass("no-scroll");
