@@ -8,4 +8,4 @@
 /**/*.DS_Store
 /.idea/
 /yarn.lock
-/js/scripts.min.js
+/app/js/scripts.min.js
