@@ -6,13 +6,17 @@
   &__inner {
     display: flex;
   }
-
+  &__photo,
+  &__content {
+    width: 50%;
+  }
   &__photo {
     padding-right: 3.2rem;
     position: relative;
 
     &__img {
-      position: relative;
+      position: absolute;
+      bottom: 0;
       z-index: 2;
     }
 
